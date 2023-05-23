@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DESCONTO DE 12%</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo calcula o desconto de 12% um produto.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var valor;
+        var valorDesconto
+        var valorComDesconto;
+
+        /*Entrada de dados*/
+        valor = window.prompt('Digite o valor do produto: ', 'Digite aqui');
+
+        /*Processamento de dados*/
+        valorDesconto = valor * 0.12;
+        valorComDesconto = valor - valorDesconto;
+
+        /*Saída de dados*/
+        document.write('O valor do produto com desconto é ', + valorComDesconto);
+    </script>
+</body>
+</html>

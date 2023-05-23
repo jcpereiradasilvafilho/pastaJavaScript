@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SwitchCase</title>
+<meta charset="utf-8"/>
+<style type="text/CSS">
+h2{font-size: 40px; text-align: center;}
+span.n{font-size: 24px; color: green; text-decoration: underline;}
+</style>
+</head>
+<body>
+<h2>Pedra - Papel - Tesoura</h2>
+<h3>- Digite <span class="n">1</span> para Pedra</h3>
+<h3>- Digite <span class="n">2</span> para Papel</h3>
+<h3>- Digite <span class="n">3</span> para Tesoura</h3>
+
+<!-- Formulário para Entrada de Dados em HTML -->
+<form name="form_ppt" action="" method="post">
+Digite a opção desejada: <input type="text" name="f_ppt" size="10" maxlength="1"/><p></p>
+<input type="button" name="btn_jogar" value="Jogar" onClick="verificaopcao()"/>
+<input type="reset" name="btn_reset" value="Reset"/><p></p>
+A opção escolhida: <input type="text" name="f_resultado" size="39" maxlength="20"/>
+</form>
+
+<!-- Início da estruturação do JavaScript -->
+<script language="JavaScript">
+<!--
+
+// Definicao das variaveis
+var js_ppt;
+
+// Processamento de dados
+function verificaopcao() {
+js_ppt = parseInt(document.form_ppt.f_ppt.value);
+switch (js_ppt) {
+case 1 : document.form_ppt.f_resultado.value = '<b>Pedra</b> ganha da Tesousa e perde para o Papel!'; break;
+case 2 : document.form_ppt.f_resultado.value = 'Papel ganha da Pedra e perde para a Tesoura!'; break;
+case 3 : document.form_ppt.f_resultado.value = 'Tesoura ganha do Papel e perde para a Pedra!'; break;
+default : document.form_ppt.f_resultado.value = 'Opção inválida!'; break;
+}
+}
+//-->
+</script>
+</body>
+</html>

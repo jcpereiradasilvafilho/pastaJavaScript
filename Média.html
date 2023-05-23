@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MÉDIA</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo imprime a média entre dois números.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero1;
+        var numero2;
+        var media;
+
+        /*Entrada de dados*/
+        numero1 = parseFloat(window.prompt('Digite um número real: ', 'Digite aqui'));
+        numero2 = parseFloat(window.prompt('Digite um número real: ', 'Digite aqui'));
+
+        /*Processamento de dados*/
+        media = (numero1 + numero2) / 2;
+
+        /*Saída de dados*/
+        document.write('A média dos números informados é: ', + media, '<BR><BR>');
+    </script>
+</body>
+</html>

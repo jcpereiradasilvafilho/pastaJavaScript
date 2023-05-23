@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INVERSÃO DE NÚMEROS</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe um número de 4 dígitos, faz a inversão e imprime o número invertido.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero;
+        var numeroInvertido;
+
+        /*Entrada de dados*/
+        numero = parseInt(window.prompt('Digite um número inteiro de 4 dígitos: ', 'Ex.: 1234'));
+        
+        /*Processamento de dados*/
+        if (numero > 999 && numero <= 9999) {
+
+            numeroInvertido = numero.toString().split('').reverse().join('');
+
+            /*Saída de dados*/
+            document.write('A inversão do número digitado é: ', + numeroInvertido,'<BR>');
+        }else{
+            document.write('Digite um número com 4 dígitos!');
+        }
+    </script>
+</body>
+</html>

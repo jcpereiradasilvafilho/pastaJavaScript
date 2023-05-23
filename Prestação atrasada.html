@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VALOR DA PRESTAÇÃO EM ATRASO</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo calcula o valor de uma prestação em atraso com a taxa e imprime o valor a pagar.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var prestacao;
+        var valor;
+        var taxa;
+        var dias
+
+        /*Entrada de dados*/
+        valor = parseFloat(window.prompt('Digite em números o valor da prestação: ', 'Ex.: 632.79'));
+        taxa = parseFloat(window.prompt('Digite quantos por cento é a taxa: ', 'Ex.: 2.5'));
+        dias = parseInt(window. prompt('Digite quantos dias a prestação está atrasada: ', 'Ex.: 3'));
+
+        /*Processamento de dados*/
+        prestacao = valor + (valor * dias * (taxa/100));
+
+        /*Saída de dados*/
+        document.write('O valor final da prestação é de: ', + prestacao, '<BR><BR>');
+    </script>
+</body>
+</html>

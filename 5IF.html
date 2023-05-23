@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IF</title>
+<meta charset="utf-8">
+<style type="text/CSS">
+h1{font-size: 30px; margin-top: 120px; text-align: center;}
+</style>
+</head>
+<boby>
+<h1>Impressão de duas somas informando qual é maior</h1>
+<script language="javascript">
+<!--
+
+//declaração das variáveis
+var n1;
+var n2;
+var n3;
+var n4;
+var soma12;
+var soma34;
+
+//entrada de dados
+n1 = parseInt(prompt('Digite o primeiro número', '123...'));
+n2 = parseInt(prompt('Digite o segundo número', '123...'));
+n3 = parseInt(prompt('Digite o terceiro número', '123...'));
+n4 = parseInt(prompt('Digite o quarto número', '123...'));
+
+//operações
+soma12 = n1 + n2;
+soma34 = n3 + n4;
+
+//saída
+if(soma12 > soma34){
+document.write('A soma do primero e segundo número é maior: ' + soma12 + ' > ' + soma34);
+}else if (soma34 > soma12){
+document.write('A soma do terceiro e quarto número é maior: ' + soma34 + ' > ' + soma12);
+}else{
+document.write('A soma do primeiro e segundo número é igual a soma do terceiro e quarto: ' + soma34 + ' = ' + soma12);
+}
+
+//-->
+</script>
+</body>
+</html>

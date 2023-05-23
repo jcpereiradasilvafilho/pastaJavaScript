@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SALÁRIO LÍQUIDO DO PROFESSOR</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo calcula os descontos do salário do professor e informa quanto fica.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var valorHoraAula;
+        var numeroAulas;
+        var descontoINSS;
+        var valorDesconto;
+        var salarioBruto;
+        var salarioLiquido;
+
+        /*Entrada de dados*/
+        valorHoraAula = parseFloat(window.prompt('Digite em números o valor da hora/aula: ', 'Digite aqui'));
+        numeroAulas = parseFloat(window.prompt('Digite o número de aulas dadas no mês: ', 'Digite aqui'));
+        descontoINSS = parseFloat(window.prompt('Digite o percentual de descontos do INSS: ', 'Digite aqui'));
+
+        /*Processamento de dados*/
+        salarioBruto = valorHoraAula * numeroAulas;
+        valorDesconto = (descontoINSS / 100) * salarioBruto;
+        salarioLiquido = salarioBruto - valorDesconto
+
+        /*Saída de dados*/
+        document.write('O valor do seu salário líquido é: ', + salarioLiquido, '<BR><BR>');
+    </script>
+</body>
+</html>

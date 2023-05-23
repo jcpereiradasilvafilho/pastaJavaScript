@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ÁREA DO TRIÂNGULO</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo imprime a área do triângulo.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var area;
+        var base;
+        var altura;
+
+        /*Entrada de dados*/
+        base = parseFloat(window.prompt('Digite em números o comprimento da base do triângulo: ', 'Digite aqui'));
+        altura = parseFloat(window.prompt('Digite em números a altura do triângulo: ', 'Digite aqui'));
+
+        /*Processamento de dados*/
+        area = (base + altura) / 2;
+
+        /*Saída de dados*/
+        document.write('A área do triângulo é: ', + area, '<BR><BR>');
+    </script>
+</body>
+</html>

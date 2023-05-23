@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VOLUME DA LATA DE ÓLEO</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo calcula o volume da lata de óleo.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var volume;
+        var raio;
+        var altura;
+
+        /*Entrada de dados*/
+        raio = window.prompt('Digite o raio da base: ', 'Digite aqui');
+        altura = window.prompt('Digite a altura: ', 'Digite aqui');
+
+        /*Processamento de dados*/
+        volume = 3.14 * raio**2 * altura;
+
+        /*Saída de dados*/
+        document.write('O volume da lara de óleo é %s', + volume);
+    </script>
+</body>
+</html>

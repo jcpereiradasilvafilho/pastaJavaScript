@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>somatoria</title>
+<style type="text/CSS">
+h3 {text-align:center; font-size: 30px; margin-top: 100px;}
+</style>
+</head>
+<body>
+<h3>Somatória de dois números inteiros com Conversão de Dados</h3>
+<script language="javascript">
+<!--
+/* Objetivo: Desenvolver um programa em JavaScript que faça a leitura de 2 números inteiros
+ aplique a conversão de valores com parseInt e apresente o resultado da soma entre eles.
+*/
+/* Definição das Variáveis */
+var idade;
+var ano;
+var soma;
+var difAno;
+/* Entrada de Dados */
+idade = parseInt(window.prompt('Qual sua idade atual: ' , 'Digite aqui'));
+ano = parseInt(window.prompt('Em qual ano você deseja saber sua idade: ' , 'Digite aqui'));
+/* Processamento de Dados */
+difAno = ano - 2023;
+soma = difAno + idade;
+/* Saída de Dados */
+document.write('O Resultado da soma= '+ soma);
+//-->
+</script>
+</body>
+</html>

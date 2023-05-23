@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Salário - do...while</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<script language="Javascript">
+<!--
+
+/* Definicao das variaveis */
+var qht; // Quantidade de Horas Trabalhadas
+var vht; // Valor da Hora Trabalhada
+var inss; // Percentual de Desconto INSS
+var t_desc; // Total de Descontos
+var bruto; // Valor do Salario Bruto
+var liquido; // Valor do Salario Liquido
+var resposta = true;
+
+/*Entrada de Dados, Processamento de Dados, Saída de Dados*/
+do{
+qht = parseFloat(window.prompt('Informe a Quantidade de Horas Trabalhadas/Mês: ','000,00'));
+vht = parseFloat(window.prompt('Informe o Valor da Hora Trabalhada: ','00,00'));
+inss = parseFloat(window.prompt('Informe o Percentual de Desconto INSS: (5 a 15)','00,00'));
+
+bruto = vht * qht;
+t_desc = (inss/100) * bruto;
+liquido = bruto - t_desc;
+
+document.write('<p><b>DEMONSTRATIVO PARA CÁLCULO DO SALÁRIO LÍQUIDO</b>');
+
+document.write('<p>Quantidade de Horas Trabalhadas => <b>' + qht + '</b>');
+if (qht > 180){
+ document.write(' ... (<b>Valor Máximo Excedido!</b>)');
+}else if (qht < 135){
+ document.write(' ... (<b>Valor Mínimo Inválido!</b>)');
+}
+
+document.write('<p>Valor da Hora Trabalhada => <b>' + vht + '</b>');
+if (vht > 50){
+ document.write(' ... (<b>Valor Máximo Excedido!</b>)');
+}else if (vht < 25){
+ document.write(' ... (<b>Valor Mínimo Inválido!</b>)');
+}
+
+document.write('<p>Percentual de Desconto INSS => <b>' + inss + '</b>');
+if (inss > 15){
+ document.write(' ... (<b>Valor Máximo Excedido!</b>)');
+}else if (inss < 5){
+ document.write(' ... (<b>Valor Mínimo Inválido!</b>)');
+}
+
+document.write('<p><b>Salario BRUTO = </b>'+bruto);
+document.write('<p>Total de Desconto INSS = '+t_desc);
+
+document.write('<p><p><b>Salario LÍQUIDO = </b>'+liquido);
+if (liquido > 10500){
+ document.write(' ... (<b>Salário Elevado! </b>maior que 10.500)');
+ }else if (liquido > 6000){
+ document.write(' ... (<b>Salário Satisfatório! </b>maior que 6.000)');
+ }else if (liquido > 3000){
+ document.write(' ... (<b>Salário Moderado! </b>maior que 3.000)');
+ }else {
+ document.write(' ... (<b>Salário inSatisfatório! </b>menor ou igual a 3.000)');
+ }
+document.write('<p>===========================================================');
+resposta = window.confirm('Deseja continuar?');
+}
+while (resposta == true);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<canvas width="500" height="500"></canvas>
+<script language="javascript">
+	var tela = document.querySelector('canvas');
+	var clique = tela.getContext('2d');
+
+	clique.fillStyle = 'black';
+	clique.fillRect(0,0,500,500);
+
+	function desenhaBolota(evento){
+		var x = evento.pageX - tela.offsetLeft; //offsetLeft serve para eliminar o espaço entre a borda lateral e o quadro, configurando o mais próximo do canto esquerdo = 0.
+		var y = evento.pageY - tela.offsetTop; // função parecitada com a de cima, mas elimina da diferença da parte superior.
+		clique.fillStyle = 'white';
+		clique.beginPath();
+		clique.arc(x,y,10,0,2*3.14);
+		clique.fill();
+	}
+	tela.onclick = desenhaBolota;
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TROCA DOS VALORES</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo efetua a troca dos valores e imprime os valores trocados.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var A;
+        var B;
+        var C;
+
+        /*Entrada de dados*/
+        A = parseInt(window.prompt('Digite o número inteiro para variável A: ', 'Digite aqui'));
+        B = parseInt(window.prompt('Digite o número inteiro para variável B: ', 'Digite aqui'));
+
+        /*Processamento de dados*/
+        C = A;
+        A = B;
+        B = C;
+
+        /*Saída de dados*/
+        document.write('O número inteiro da variável A é ', + A, '<BR><BR>');
+        document.write('O número inteiro da variável B é ', + B);
+    </script>
+</body>
+</html>

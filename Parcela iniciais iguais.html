@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PARCELAS DO PEDRINHO</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe o valor da compra e a quantidade de parcela e divide até deixar do jeito que pedrinho quer.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var valor;
+        var parcela;
+        var metadeParcela;
+        var valorParcela = 0;
+        var soma = 0;
+        var novaDivisao = 0;
+        var i;
+        var contador;
+
+        /*Entrada de dados*/
+        valor = parseFloat(window.prompt('Digite o valor da compra: ', 'Ex.: 801'));
+        parcela = parseInt(window.prompt('Digite o número de parcela: ', 'Ex.: 12'));
+        
+        /*Processamento de dados*/
+        if (valor % parcela == 0){
+            valorParcela = valor / parcela;
+
+            /*Saída de dados*/
+            document.write('O valor da parcela é de: ', + valorParcela, ' reais!');
+        }else{
+            metadeParcela = parseInt(parcela / 2);
+            switch(valor%parcela){
+            case 1:
+                valorParcela = parseInt(valor / parcela) + 1;
+                break;
+            case 2:
+                valorParcela = parseInt(valor / parcela) + 2;
+                break;
+            case 3:
+                valorParcela = parseInt(valor / parcela) + 3;
+                break;
+            case 4:
+                valorParcela = parseInt(valor / parcela) + 4;
+                break;
+            case 5:
+                valorParcela = parseInt(valor / parcela) + 5;
+                break;
+            case 6:
+                valorParcela = parseInt(valor / parcela) + 6;
+                break;
+            case 7:
+                valorParcela = parseInt(valor / parcela) + 7;
+                break;
+            case 8:
+                valorParcela = parseInt(valor / parcela) + 8;
+                break;
+            case 9:
+                valorParcela = parseInt(valor / parcela) + 9;
+                break;
+            }
+            for (i = 1; i <= parcela; i++) {
+                while (metadeParcela >= i) {
+                    document.write('O valor da parcela ', + i, ' é de: ', + valorParcela, ' reais!<BR>');
+                    soma += valorParcela;
+                    contador = (parcela - i);
+                    i++;
+                    if ((valor - soma)%contador == 0){
+                        break;
+                    }
+                }
+                while(i <= parcela){
+                    novaDivisao = (valor - soma) / contador;
+                    document.write('O valor da parcela ', + i, ' é de: ', + novaDivisao, ' reais!<BR>');
+                    i++;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

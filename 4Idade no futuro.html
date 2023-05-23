@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Idade no Futuro</title>
+<style type="text/CSS">
+h3 {text-align:center; font-size: 30px; margin-top: 100px;}
+</style>
+</head>
+<body>
+<h3>Calcule sua idade no futuro</h3>
+
+<form name="Formulario" action=" " method="post">
+	Em qual ano você deseja saber sua idade? <input type="text" name="q1"/><p></p>
+	<input type="button" name="btn_somar" value="Somar" onClick="soma()"/>
+	<input type="reset" name="btn_apagar" value="Apagar"/>
+</form>
+
+<script language="javascript">
+<!--
+	/*O programa tem por objetivo calcular a idade atual do usuário com o ano futuro.*/
+
+//variáveis
+var idade;
+var ano;
+var difAno;
+var soma;
+
+//entrada de dados
+	idade = parseInt(window.prompt('Qual sua idade atual?' , 'Digite aqui'));
+
+// operações de soma
+function soma(){
+	ano = parseInt(document.Formulario.q1.value);
+	difAno = ano - 2023;
+	soma = difAno + idade;
+
+	//saída de dados
+	alert('Sua idade em '  + ano.toString() + ' será: ' + soma.toString());
+	return;
+}
+//-->
+</script>
+</body>
+</html>

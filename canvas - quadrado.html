@@ -1,0 +1,17 @@
+<canvas width="600" height="600">
+</canvas>
+<script language="javascript">
+	var tela = document.querySelector('canvas');
+	var quadrado = tela.getContext('2d');
+
+	function desenharQuadrado(x,y, cor){
+		quadrado.fillStyle=cor;
+		quadrado.fillRect(x,y,50,50);
+		quadrado.fillStroke='red';
+		quadrado.strokeRect(x,y,50,50);
+	}
+	desenharQuadrado(0,0, 'blue');
+	desenharQuadrado(0,50, 'grey');
+	desenharQuadrado(50,0, 'yellow');
+	desenharQuadrado(100,100, 'red');
+</script>

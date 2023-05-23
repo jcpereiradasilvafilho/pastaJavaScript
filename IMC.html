@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMC</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo calcula o IMC da pessoa e imprime o valor.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var peso;
+        var altura;
+        var IMC;
+
+        /*Entrada de dados*/
+        peso = parseFloat(window.prompt('Digite em números o seu peso: ', 'Digite aqui'));
+        altura = parseFloat(window.prompt('Digite em metros sua altura: ', 'Ex.: 1.78'));
+
+        /*Processamento de dados*/
+        IMC = peso / (altura * altura);
+
+        /*Saída de dados*/
+        document.write('O valor do seu IMC é: ', + IMC, '<BR><BR>');
+    </script>
+</body>
+</html>

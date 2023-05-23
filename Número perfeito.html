@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NÚMERO PERFEITO</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe um número e calcula a fim de saber se é um número perfeito.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero;
+        var soma = 0;
+        var i;
+
+        /*Entrada de dados*/
+        numero = parseInt(window.prompt('Digite um número inteiro: ', 'Ex.: 34'));
+        
+        /*Processamento de dados*/
+        for (i = 1; i < numero; i++) {
+            if (numero % i == 0){
+                soma += i;
+            }
+        }
+
+        if (soma == numero) {
+
+            /*Saída de dados*/
+            document.write('O número digitado: ', + numero, ' é um número perfeito, pois sua soma de todos os seus divisores naturais próprios é igual: ', soma);
+
+        }else{
+
+            /*Saída de dados*/
+            document.write('O número digitado: ', + numero, ' não é um número perfeito, pois sua soma de todos os seus divisores naturais próprios é igual: ', soma);
+
+        }
+
+    </script>
+</body>
+</html>
