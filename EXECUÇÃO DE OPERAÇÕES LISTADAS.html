@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEXECUÇÃO DE OPERAÇÕES LISTADAS</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe dois número mais o a operações que se deseja pelo usuário e imprime o resultado.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero1, numero2, operacao, media, subtracao, produto, divisao;
+
+        /*Entrada de dados*/
+        numero1 = parseFloat(window.prompt('Digite o primeiro número: ', '7.8'));   
+        numero2 = parseFloat(window.prompt('Digite o segundo número: ', '7.8')); 
+        operacao = parseInt(window.prompt('Digite o número da operação desejada: ', '1, 2, 3 ou 4')); 
+
+        /*Processamento de dados*/
+        switch(operacao){
+            case 1:
+                media = (numero1 + numero2) / 2;
+                document.write('A média dos números digitados é: ', media);
+                break;
+            case 2:
+                if(numero1 > numero2){
+                    subtracao = numero1 - numero2;
+                    document.write('A diferença do maior para o menor é: ', subtracao);                   
+                }else{
+                    subtracao = numero2 - numero1;
+                    document.write('A diferença do maior para o menor é: ', subtracao);
+                }
+                break;
+            case 3:
+                produto = numero1 * numero2;
+                document.write('O produto entre os números digitados é: ', produto);
+                break;
+            case 4:
+                divisao = numero1 / numero2;
+                document.write('A divisão entre os números digitados é: ', divisao);
+                break;
+            default:
+                document.write('Número inválido!');
+            }
+
+    </script>
+</body>
+</html>
+

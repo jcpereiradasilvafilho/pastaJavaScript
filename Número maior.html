@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NÚMERO MAIOR</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe três números e informa ao usuário qual é o maior.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero1, numero2, numero3;
+
+        /*Entrada de dados*/
+        numero1 = window.prompt('Digite o primeiro número: ', '9');  
+        numero2 = window.prompt('Digite o segundo número: ', '7');  
+        numero3 = window.prompt('Digite o terceiro número: ', '8');  
+
+        /*Saída de dados*/
+        if(numero1 > numero2 && numero1 > numero3){
+            document.write('O número ', numero1, ' é maior que os números ', numero2, ' e ', numero3, '!');
+        }else if (numero2 > numero1 && numero2 > numero3){
+            document.write('O número ', numero2, ' é maior que os números ', numero1, ' e ', numero3, '!');
+        }else{
+            document.write('O número ', numero3, ' é maior que os números ', numero1, ' e ', numero2, '!');
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NÚMERO MENOR</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe dois números e informa ao usuário qual é o menor.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero1, numero2;
+
+        /*Entrada de dados*/
+        numero1 = window.prompt('Digite o primeiro número: ', '9');  
+        numero2 = window.prompt('Digite o segundo número: ', '7');  
+
+        /*Saída de dados*/
+        if(numero1 > numero2){
+            document.write('O número ', numero1, ' é maior que o número ', numero2, '!');
+        }else{
+            document.write('O número ', numero2, ' é maior que o número ', numero1, '!');
+        }
+
+    </script>
+</body>
+</html>

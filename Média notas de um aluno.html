@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MÉDIA DAS NOTAS</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe as notas do aluno e imprime se foi aprovado.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var nota, soma=0, i, media;
+
+        /*Entrada de dados*/
+        for(i=0;i<=3;i++){
+            nota = parseFloat(window.prompt('Digite sua nota: ', '7.8'));      
+            soma += nota;    
+        }
+
+        /*Processamento de dados*/
+        media = soma / 4;
+
+        /*Saída de dados*/
+        if(media >= 7){
+            document.write('A média das suas notas é: ', + media, '<BR><BR>Parabéns, você foi aprovado!');
+        }else{
+            document.write('A média das suas notas é: ', + media, '<BR><BR>Lamento, mas você foi reprovado!');
+        }
+
+    </script>
+</body>
+</html>

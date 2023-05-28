@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAIZ QUADRADA DE 5 NÚMEROS</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe cinco número e imprime a raiz quadrada.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var numero, i, resultado, quadrado;
+
+        /*Processamento de dados*/
+        function calcularQuadrado(numero) {
+        return numero * numero;
+        }
+
+        // Array para armazenar os números
+        let numeros = [];
+
+        // Obtendo os números do usuário
+        for (i = 1; i <= 5; i++) {
+            numero = parseFloat(prompt("Digite o número " + i + ":", '7'));
+            numeros.push(numero);
+        }
+
+        // Calculando e exibindo o quadrado de cada número
+        document.write("Quadrados dos números:<br>");
+
+        for (i = 0; i < numeros.length; i++) {
+          quadrado = calcularQuadrado(numeros[i]);
+          document.write(numeros[i] + " é: " + quadrado, "<br>");
+        }
+
+    </script>
+</body>
+</html>
+
