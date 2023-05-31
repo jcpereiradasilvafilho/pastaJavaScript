@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MÉDIA DAS ALTURAS COM MAIS DE 50 ANOS</title>
+    <style type="text/css">
+        h3 {text-align: center; font-size: 30px; margin-top: 100px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe idade e altura de várias pessoas, calcula a média das alturas das pessoas com mais de 50 anos e exibe o resultado.</h3>
+    <script language="javascript">
+
+        /*Variáveis*/
+        var idade, idades = [], altura, alturas = [], i, contador=0, somaAltura=0, media;
+
+        /*Entrada de dados*/
+
+        do {
+            idade = parseInt(window.prompt("Digite a idade da pessoa:", "Para encerrar, digite 0."));
+            idades.push(idade);
+            altura = parseInt(window.prompt("Digite a altura da pessoa em centímetros:", "184"));
+            alturas.push(altura);
+        } while (idade != 0);
+
+        /*Processamento de dados*/
+        for (i = 0; i < idades.length; i++) {
+          if (idades[i] > 50){
+            somaAltura += alturas[i];
+            contador++;
+          }
+        }
+
+        /*Saída de dados*/
+        if (somaAltura != 0) {
+            media = somaAltura / contador;
+            document.write("A média das alturas das pessoas com mais de 50 anos é: " + media + " centímetros.<br>");
+        }else{
+            document.write("A média das alturas das pessoas com mais de 50 anos é: 0 centímetros.<br>");
+        }
+        
+
+    </script>
+</body>
+</html>
+
