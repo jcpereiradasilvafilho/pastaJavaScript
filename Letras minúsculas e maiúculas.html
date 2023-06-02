@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<head>
+    <title>CONVERSÃO DE LETRAS MINÚSCULAS E MAIÚCULAS</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe dois textos do usuário e converte em minúsculas e maiúculas.</h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var texto1, texto2;
+
+        /*Entrada de dados*/
+        texto1 = window.prompt("Digite seu texto com letras maiúsculas: ", "ARROZ, FEIJÃO E OVO.");
+
+        /*Processamento de dados*/
+        texto1 = texto1.toLowerCase();
+
+        /*Saída de dados*/
+        document.write("<h4>Segue abaixo o seu texto convertido em letras minúsculas:</h4><BR>"+texto1+"<BR><BR>");
+
+        function depois() {
+            /*Entrada de dados*/
+            texto2 = window.prompt("Digite seu texto com letras minúsculas: ", "guanabara.");
+
+            /*Processamento de dados*/
+            texto2 = texto2.toUpperCase();
+
+            /*Saída de dados*/
+            document.write("<h4>Segue abaixo o seu texto convertido em letras maiúsculas:</h4><BR>"+texto2);
+        }
+    </script>
+    <input type="button" value="Converter em minúslas" onclick=depois()>
+</body>
+</html>

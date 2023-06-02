@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+    <title>IFPI SUBSTR E SLICE</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo imprime uma saída específica usando a função charAt.</h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var texto = 'IFPI', caracteres = '',i;
+
+        /*Processamento de dados*/
+        for(i=0;i<=texto.length;i++){
+            caracteres = texto.substr(0,i);
+            document.write(caracteres+"<BR>");
+        }
+        while(caracteres != texto.substr(0,1)){
+            caracteres = caracteres.slice(0, -1);
+            document.write(caracteres+"<BR>");
+        }
+
+    </script>
+</body>
+</html>
