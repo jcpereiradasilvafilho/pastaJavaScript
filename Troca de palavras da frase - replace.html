@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+    <title>TROCA DE PALAVRAS DE UMA FRASE</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe uma frase, substitui uma palavra da frase e imprime como a frase ficou.<BR><BR></h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var frase, palavraSustituida, novaPalavra, novaFrase;
+
+        /*Entrada de dados*/
+        frase = window.prompt("Digite sua frase: ", "O Rato Roeu a Rouba do Rei de Roma.");
+        palavraSustituida = window.prompt("Digite a palavra que você deseja substituir: ", "Rouba");
+        novaPalavra = window.prompt("Digite a nova palavra que você deseja inserir na frase: ", "Roupa");
+
+        /*Processamento de dados*/
+        novaFrase = frase.replace(palavraSustituida, novaPalavra);
+
+        /*Saída de dados*/
+        document.write("<h4>Vaja a diferenaça entre a frase anterior e a nova frase: </h4><BR>"+frase+"<BR>"+novaFrase+"<BR>");
+
+    </script>
+</body>
+</html>
