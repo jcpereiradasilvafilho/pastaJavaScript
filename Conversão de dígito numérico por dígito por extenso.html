@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+    <title>CONVERSÃO DE DIGITO NUMÉRICO POR DÍGITO POR EXTENSO</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe dígitos numéricos, converte por dígitos por extenso e imprime a troca no final.<BR><BR></h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var numeros, string;
+
+        /*Entrada de dados*/
+        numeros = window.prompt("Digite seus números: ", "1234");
+
+        /*Processamento de dados*/
+        string = numeros.toString();
+
+        function conversao(x,y){
+            string = string.replace(x, y);
+        }
+        conversao(1, "um ");
+        conversao(2, "dois ");
+        conversao(3, "três ");
+        conversao(4, "quatro ");
+        conversao(5, "cinco ");
+        conversao(6, "seis ");
+        conversao(7, "sete ");
+        conversao(8, "oito ");
+        conversao(9, "nove ");
+        conversao(0, "zero ");
+
+        /*Saída de dados*/
+        document.write("<h4>Segue abaixo a diferença entre o dígito numérico e o dígito por extenso: </h4><BR>"+numeros+"<BR>"+string);
+
+    </script>
+</body>
+</html>

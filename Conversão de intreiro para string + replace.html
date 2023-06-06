@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+    <title>CONVERSÃO DE INTEIRO PARA STRING + REPLACE</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo substitui uns números por letra e imprime a troca no final.<BR><BR></h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var caracteres = [], string, novaString;
+
+        /*Entrada de dados*/
+        caracteres = [3, 14, 12, 15, 20, 19, 1, 4, 14, 17];
+
+        /*Processamento de dados*/
+        string = caracteres.toString();
+
+        function conversao(x,y){
+            string = string.replace(x, y);
+            string = string.replace(",", "");
+        }
+        conversao(3, "c");
+        conversao(14, "o");
+        conversao(12, "m");
+        conversao(15, "p");
+        conversao(20, "u");
+        conversao(19, "t");
+        conversao(1, "a");
+        conversao(4, "d");
+        conversao(14, "o");
+        conversao(17, "r");
+
+        /*Saída de dados*/
+        document.write("<h4>Após a conversão dos números pelas letra a palavra impressa é: </h4><BR>"+string+"<BR>");
+
+    </script>
+</body>
+</html>

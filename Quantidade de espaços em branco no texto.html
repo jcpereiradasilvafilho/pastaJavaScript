@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+    <title>QUANTIDADE DE ESPAÇOS EM BRANCO NO TEXTO</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe um texto, conta a quantidade da espaços em branco e imprime o resultado.</h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var texto, espaco, ocorrencia = 0, i;
+
+        /*Entrada de dados*/
+        texto = window.prompt("Digite seu texto: ", "Este é o meu texto que contém a palavra texto.");
+
+        /*Processamento*/
+        espaco = " ";
+        for (i = 0; i < texto.length; i++) {
+            if (texto[i] == espaco) {
+                ocorrencia++;
+            }
+        }
+
+        /*Saída de dados*/
+        document.write("<h4>O texto digitado contém: " + ocorrencia + " espaços em branco.</h4><BR>");
+
+    </script>
+</body>
+</html>

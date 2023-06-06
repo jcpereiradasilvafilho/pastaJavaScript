@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+    <title>ÚLTIMO SOBRENOME DO NOME</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo o nome completo de uma pessoa, verifica qual é o último sobrenome e imprime.</h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var nome, sobrenome, palavra, i, j=0;
+
+        /*Entrada de dados*/
+        texto = window.prompt("Digite seu nome completo: ", "Afonso Paulino Fonseca");
+
+        /*Processamento*/
+        palavra = texto.split(' ');
+        for(i=0;i<palavra.length;i++){
+            j=i;
+        }
+        sobrenome = palavra[j]
+
+        /*Saída de dados*/
+        document.write("<h4>O último sobrenome do nome digitado é:</h4>" + sobrenome + "<BR>");
+
+    </script>
+</body>
+</html>

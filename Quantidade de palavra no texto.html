@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+    <title>QUANTIDADE DE PALAVRAS NO TEXTO</title>
+    <style type="text/css">
+        h3{text-align: center; font-size: 25px; margin-top: 90px}
+    </style>
+</head>
+<body>
+    <h3>O algorítmo recebe um texto do usuário, conta o número de caracteres total, o número de palavras e informa a quantidade.</h3>
+    <script type="text/javascript">
+        
+        /*Variáveis*/
+        var texto, quantidade, palavra, j=0;
+
+        /*Entrada de dados*/
+        texto = window.prompt("Digite o texto: ", "Atirei o pau no gato.");
+
+        /*Processamento*/
+        palavra = texto.split(' ');
+        for(i=0;i<palavra.length;i++){
+            j = i + 1;
+        }
+        quantidade = texto.length;
+
+        /*Saída de dados*/
+        document.write("A quantidade de caracteres presente no texto é: " + quantidade + "<BR>O número de palavras é: " + j + "<BR>");
+
+    </script>
+</body>
+</html>
